@@ -58,7 +58,7 @@ class Task013Test {
         onView(
             allOf(
                 withId(R.id.decrementButton),
-                withText("-"),
+                withText("- "),
                 isAssignableFrom(Button::class.java),
                 withParent(isAssignableFrom(LinearLayout::class.java)),
                 withParent(withId(R.id.rootLayout))
