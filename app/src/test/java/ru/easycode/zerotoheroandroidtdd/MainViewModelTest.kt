@@ -39,6 +39,7 @@ class MainViewModelTest {
         )
         viewModel.load()
         liveDataWrapper.checkUpdateCalls(listOf(UiState.ShowProgress, UiState.ShowData))
+            //  это обьекты по этому у них нету конструктора
         repository.checkLoadCalledTimes(1)
     }
 }
